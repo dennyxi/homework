@@ -1,0 +1,43 @@
+.outer{
+  border: 2px solid black;
+  background-color: gray;
+  padding: 10px;
+  margin: 10px;
+  font-size: 50px;
+  font-style: normal;
+  width: 100%;
+
+}
+.left {
+  width: 25%;
+  border: 3px solid black;
+  padding: 20px;
+  margin: 10px;
+  float: left;
+
+
+
+}
+.right {
+  width: 25%;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px;
+  float: right;
+
+
+
+}
+.contents{
+  border: 2px solid black;
+  background-color: gray;
+  padding: 10px;
+  margin: 50px;
+  font-size: 50px;
+  font-style: normal;
+}
+.bottom{
+  clear: both;
+  font-size: 50px;
+  font-style: normal;
+}
