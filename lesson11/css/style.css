@@ -1,37 +1,89 @@
-/*.good3{
-  width: 40%;
-  height: 40%;
-}
-.good2{
-  width: 20%;
-  height: 20%;
-}
-.good1{
+/*.right{
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 25%;
-  height: 25%;
+  padding: 5px;
+  border: 3px solid blue;
+  background-color: #cccccc;
 
-
-  background-color: #6f007f;
-  border: 5px solid #0000;
 }*/
-.tr{
-  text-align: center;
+.outer{
+  font-size: 50px;
+  font-style: normal;
 }
-.pt{
-  width: 240px;
-  height: 240px;
+#navigationbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  width: 20%;
 }
-
-#title {
-  text-align: left;
+#navigationbar ul{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  background-color: #eeeeee;
+  overflow: visible;
 }
-table{
-  border: 5px solid gray;
-  border-collapse: collapse;
-  background: #bab7ba;
+#navigationbar ul > li{
+  display: block;
+  float: left;
+  height: auto;
+  /* menu header's item width */
+  width: 120px;
 }
-th, td, {
-  border: 5px solid gray;
-  border-collapse: collapse;
-
+#navigationbar li > a{
+  display: block;
+  padding: 0 0 0 0 10px;
+  height: 100%;
+  width: 109px;
+  border-right: 1px black solid;
+  line-height: 30px;
+  font-family: sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #5d5636;
+}
+#navigationbar ul ul {
+  margin-top: 2px;
+  display: none;
+  position: static;
+  /*float: none;*/
+  height: auto;
+  width: 160px;
+  border: 1px #666666 solid;
+  background-color: #dddddd;
+}
+#navigationbar ul ul li{
+  position: relative;
+  float: none;
+  display: block;
+  height: 28px;
+  width: 100%;
+  border: none;
+}
+#navigationbar ul ul li > a{
+  height: 100%;
+  width: 96%;
+  padding: 0 0 0 4%;
+  line-height: 28px;
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  font-size: 12px;
+  font-style: normal;
+}
+#navigationbar li:hover >a {
+  color: #220000;
+  background-color: #eeeabe;
+}
+#navigationbar li:hover >ul{
+  display: block;
 }
