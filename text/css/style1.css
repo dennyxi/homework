@@ -1,0 +1,11 @@
+.text{
+  text-align: center;
+}
+table{
+  margin:auto;
+}
+tr,td,th{
+  width: 200px;
+  height: 5px;
+
+}
