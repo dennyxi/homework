@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>homework lesson12</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Please Log In</h1>
+    <form class="one" action="form-processing-script" method="post">
+      <div class="two">
+        <label for="username">Username</label>
+        <input type="text" name="username" >
+      </div>
+      <div class="password">
+        <label for="password">Password</label>
+        <input type="password" name="password"size="8"maxlength="8" >
+      </div>
+      <div class="three">
+        <input type="submit" name="submit" value="Log In">
+        <input type="reset" name="reset" value="Clear From">
+      </div>
+
+    </form>
+
+    <form >
+      <label>FOR MOVE:
+        <input id="move" list="game">
+      <datalist id="game">
+        <option value="rock"></option>
+        <option value="paper"></option>
+        <option value="scissors"></option>
+        <option value="unicon"></option>
+        <option value="good"></option>
+      </datalist>
+      </label>
+        <input type="reset" name="reset" value="Clear From">
+    </form>
+
+    <div >
+      <label>How much do you like our product? <br>
+      Not at all <input type="range" id="like" min="0" max="5"value="1">Perfect
+      </label>
+    </div>
+
+    <div >
+      <label>When can you return the book? <br>
+        <input type="date" id="returndate" >
+      </label>
+    </div>
+
+    <div >
+      <label>What is your favorite color? <br>
+        <input type="color" id="favoritecolor" >
+      </label>
+    </div>
+
+    <div >
+      <label>search: <br>
+        <input type="search" id="s" >
+      </label>
+    </div>
+    <form action="form-processing-script" method="post">
+      <h1>Check all symptoms that you are experiencing:</h1>
+      <label><input type="checkbox" name="symptom" value="nausea">Nausea</label>
+      <label><input type="checkbox" name="symptom" value="nausea">Nausea</label>
+      <label><input type="checkbox" name="symptom" value="nausea">Nausea</label>
+      <label><input type="checkbox" name="symptom" value="nausea">Nausea</label>
+        <input type="submit" name="submit" value="submit">
+        <input type="reset" name="reset" value="Clear From">
+    </form>
+
+    <h1>Select a color:</h1>
+    <label style="display: block"><input type="radio" name="color" value="red">Red</label>
+    <label style="display: block"><input type="radio" name="color" value="red">Red</label>
+    <label style="display: block"><input type="radio" name="color" value="red">Red</label>
+    <label style="display: block"><input type="radio" name="color" value="red">Red</label>
+
+    <form  action="/upload" enctype="multipart/form-data"method="post">
+      <h1>choose</h1>
+        <input type="file" id="new_file">
+        <input type="submit">
+        <input type="reset" >
+    </form>
+
+    <button type="submit" ><b><i>Submit button</i></b></button>
+    <button type="custom"><img src="images/goo.gif"></button>
+
+  </body>
+</html>
