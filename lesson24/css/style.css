@@ -1,0 +1,42 @@
+
+.field{
+  display: block;
+  float: left;
+  margin-right: 30px;
+  width: 500px;
+  text-align: right;
+  margin-bottom: 25px;
+}
+.required{
+  font-weight: bold;
+}
+.name {
+  border: 2px solid #000;
+  background-color: #aaa;
+  font: bold 18px Verdana;
+  padding: 4px;
+}
+#system{
+  border: 2px solid #000;
+  background-color: #aaa;
+  font: bold 18px Verdana;
+  padding: 4px;
+}
+.question{
+  border: 2px solid #000;
+  background-color: #aaa;
+  font: bold 18px Verdana;
+  padding: 4px;
+}
+.text{
+  text-align: center;
+}
+.submit{
+margin-left: 540px;
+}
+
+
+div{clear:both;}
+.error{
+  color: red;
+}

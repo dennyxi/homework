@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Snapshot</h1>
+
+    <ul >
+      <li><a href="images/fireworks.jpg"title="A firwork display" onclick="showPic(this);return false;">Firworks</a></li>
+      <li><a href="images/coffee.jpg"title="a cup of black coffee"onclick="showPic(this);return false;">Coffee</a></li>
+      <li><a href="images/rose.jpg"title="a red,red rose" onclick="showPic(this);return false;">Rose</a></li>
+      <li><a href="images/bigben.jpg"title="The famous clock" onclick="showPic(this);return false;">Big Ben</a></li>
+    </ul>
+    <img id="placeholder"src="images/placeholder.gif" alt="my iamge gallery">
+    <p id="description">Choose an image.</p>
+    <script src="scripts/showPic.js"></script>
+  </body>
+
+</html>

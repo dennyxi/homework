@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>shopping list</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>what to buy</h1>
+    <p title="a gentle remindeer">Don't forget to buy this stuff</p>
+    <ul id="purchases">
+      <li>a tin of beans</li>
+      <li class="sale">cheese</li>
+      <li class="sale important">Milk</li>
+    </ul>
+    <script>
+      var shopping = document.getElementById("purchases");
+      var items = shopping.getElementsByTagName("*");
+      alert(items.length);
+      for (var i=0;i<items.length;i++){
+        alert(typeof items[i]);
+      }
+    </script>
+  </body>
+</html>

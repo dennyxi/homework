@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>altering classes in the fly</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+      <li>four</li>
+    </ul>
+    <script src="jquery.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+        $("li").click(function(){
+          if (!$(this).toggleClass("highlighted")){
+            $(this).addClass("highlighted");
+          }
+          else {
+            alert("this list item is already highlighted.")
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

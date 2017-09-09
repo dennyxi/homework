@@ -1,0 +1,36 @@
+form div{
+  margin: lem;
+}
+div.submit input{
+  margin-left: 165px;
+}
+label.field{
+  display: block;
+  float: left;
+  margin-right: 15px;
+  width: 150px;
+  text-align: right;
+}
+input[type="text"],select,textarea{
+  width: 300px;
+  font: 18px Verdana;
+  border: solid 2px #666;
+  background-color: #ada;
+}
+div.required label.field{
+  font-weight: bold;
+}
+div.required input, div.required select{
+  background-color: #6a6;
+  border: solid 2px #000;
+  font-weight: bold;
+}
+div.error label{
+  color: red;
+}
+div.errors{
+  border: 2px solid red;
+  color: red;
+  width: 50%;
+  padding: 10px;
+}

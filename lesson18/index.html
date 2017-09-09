@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>altering classes in the fly</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <form>
+      <label>Email address: <input  name="email" value="person@example.com" size="40">
+
+
+      </label>
+      <input  id="emailFormSubmit"type="submit" disabled>
+    </form>
+    <script src="jquery.js">
+    </script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+        $("input[name='email']").focus(function(){
+          if ($(this).val() == "person@example.com"){
+            $(this).val("");
+            $(this).css("color", "black");
+          }
+        });
+        $("input[name='email']").blur(function(){
+          if ($(this).val()==""){
+            $(this).val("person@example.com");
+            $(this).css("color", "#999");
+            $("#emailFormSubmit").attr("disabled", "disabled");
+          }
+          else {
+            $("#emailFormSubmit").removeAttr("disabled");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

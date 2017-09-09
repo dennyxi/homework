@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>test script</title>
+  </head>
+  <body>
+    <div id="open" style="padding: lem; border: 3px solid black;
+    font-size :300%;">we are open</div>
+    <div id="closed" style="padding: lem; border: 3px solid black;
+    font-size :300%;">we are closed</div>
+    <script src="jquery.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    $(function(){
+      $("#closed").hide();
+      $("#open,#closed").click(function (event){
+        $("#open, #closed").toggle();
+      });
+    });
+    $(this).css("text-decoration", "underline");
+    alert("the font size is" + $(this).css("font-size"))
+    </script>
+
+  </p>
+  <p>Printed after javascript is run.</p>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <h1>registerion Form</h1>
+  <p>plestjlgasdjoflajlfjsaflal</p>
+  <form  action="/register" method="post" enctype="multipart/form-data" id="registrationForm">
+    <div class="required">
+      <label class="field" for="name">name</label>
+      <input type="text" name="name" />
+    </div>
+    <div class="required">
+      <label class="field">Gender</label>
+      <label><input type="radio" name="gender" value="male" /> male</label>
+      <label ><input type="radio" name="gender" value="female" />female</label>
+    </div>
+    <div class="required">
+      <label class="field">Operating</label>
+      <select  name="os">
+        <option value="windows">Windows</option>
+        <option value="macos">Macos</option>
+        <option value="linux">Linux</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div >
+      <label class="field">Toys</label>
+      <label><input type="checkbox" name="toy" value="digicam">Digital Camera</label>
+      <label><input type="checkbox" name="toy" value="map3">MP3 Player</label>
+      <label><input type="checkbox" name="toy" value="wlan">Wireless LAN</label>
+    </div>
+    <div>
+      <label class="field">Portrait</label>
+      <input type="file" name="portrait"  />
+    </div>
+    <div>
+      <label class="field">Mini Biography</label>
+      <textarea name="bio" rows="6" cols="40"></textarea>
+    </div>
+    <div class="submit">
+      <input type="submit" name="register">
+    </div>
+  </form>
+  </body>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/form.js"></script>
+
+</html>
